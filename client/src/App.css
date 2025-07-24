@@ -4,7 +4,7 @@
   min-width: 100vw;
   min-height: 100vh;
   
-  background-image: url("pageBgIllust2.PNG");
+  background-image: url("/pageBgIllust2.PNG");
   background-color: var(--white);
   background-position: center;
   background-repeat: no-repeat;
