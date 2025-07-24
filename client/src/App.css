@@ -16,6 +16,24 @@
   
 }
 
+.footer {
+  position: absolute;
+  bottom: 2%;
+  left: 2%;
+
+  text-shadow: var(--shadow-text);
+  
+}
+
+.footer a {
+  color: var(--link);
+  transition: var(--btn-transition);
+}
+
+.footer a:hover {
+  color: var(--link-hov);
+}
+
 @media screen and (max-width: 768px) {
   #root {
     background-position: right;

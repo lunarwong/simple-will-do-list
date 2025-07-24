@@ -20,6 +20,8 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
+  --shadow-text: 0px 0px 20px #fffba5;
+
   --black: #464F51;
   --grey: #A5BFCC;
   --white: #F5F7F8;
@@ -36,6 +38,8 @@
   --list-bg: #F5F7F8;
   --edit-btn: #FCC737;
   --del-btn: #FF90BB;
+  --link: #0D5EA6;
+  --link-hov: #9B177E;
 
   --btn-transition: all 0.2s ease-in-out;
 }

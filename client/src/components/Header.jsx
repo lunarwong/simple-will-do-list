@@ -21,7 +21,7 @@ const Header = ()=> {
         localStorage.setItem("willdoLists", JSON.stringify(listsArray));
 
         setInputValue('');
-        window.location = "/";
+        window.location.reload();
     }
     
     return (
