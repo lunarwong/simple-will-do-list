@@ -1,0 +1,104 @@
+
+
+
+table.listTable{
+    width: 40%;
+    border-collapse: separate;
+    border-spacing: 0 0.75em;
+    table-layout: fixed;
+
+    /*background-color: var(--table-bg);*/
+    /* From https://css.glass */
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(8.7px);
+    -webkit-backdrop-filter: blur(8.7px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+
+
+    border-radius: 16px;
+    padding: 1em;
+    margin: 0 auto;
+}
+
+.listTable th:nth-child(1),
+.listTable td:nth-child(1) {
+    width: 70%;
+}
+
+.listTable th:nth-child(2),
+.listTable td:nth-child(2),
+.listTable th:nth-child(3),
+.listTable td:nth-child(3) {
+    width: 15%;
+}
+
+.listTable tbody td {
+    background-color: var(--list-bg);
+    padding: 8px;
+}
+
+.listTable tbody td:first-child {
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.listTable tbody td:last-child {
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+button.iconBtn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 2.5em;
+    height: 2.5em;
+    font-size: 1em;
+    text-align: center;
+    /*line-height: 3em; */
+    padding: 0;
+    margin: 0 auto;
+
+    transition: all 150ms ease-in-out;
+}
+
+button.iconBtn:hover {
+    transform: scale(1.15);
+}
+
+.iconBtn.del {
+    border: 1px solid var(--del-btn);
+}
+
+.icon {
+    font-size: 12px;
+}
+
+@media screen and (max-width: 768px) {
+    table.listTable {
+        width: 80%;
+        table-layout: fixed;
+    }
+}
+
+@media screen and (max-width: 496px){
+    .listTable th:nth-child(1),
+    .listTable td:nth-child(1) {
+        width: 60%;
+        font-size: 0.75rem; 
+        white-space: nowrap; 
+    }
+
+    .listTable th:nth-child(2),
+    .listTable td:nth-child(2),
+    .listTable th:nth-child(3),
+    .listTable td:nth-child(3) {
+        width: 20%;
+        font-size: 0.75rem; 
+        white-space: nowrap; 
+    }
+
+}
